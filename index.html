@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive JavaScript Quiz App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="quiz-app">
+      <section id="quiz-screen" class="card">
+        <p id="score-badge" class="score-badge">Score: 0</p>
+        <p id="question-counter" class="question-counter">Question 1 of 8</p>
+
+        <h1>JavaScript Quiz Challenge</h1>
+        <h2 id="question-text">Question text</h2>
+
+        <div
+          id="options-container"
+          class="options-container"
+          aria-live="polite"
+        ></div>
+
+        <button id="next-btn" class="primary-btn" type="button" disabled>
+          Next Question
+        </button>
+      </section>
+
+      <section id="result-screen" class="card hidden" aria-live="polite">
+        <h2 id="final-score">You scored 0 out of 8</h2>
+        <button id="restart-btn" class="primary-btn" type="button">
+          Restart Quiz
+        </button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
